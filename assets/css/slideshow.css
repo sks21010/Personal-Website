@@ -1,0 +1,32 @@
+
+
+.slide{
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+    border: 2px solid black;
+    padding: 20px;
+    border-radius: 15px;
+    border-width: 4px;
+    transition: 0.6s
+    
+}
+
+.project_name_and_pic {
+    width: 48%;
+    text-align: center;
+    margin-right: 2%;
+    
+    
+}
+
+.project_description {
+    width: 48%;
+    text-align: left;
+    margin-left: 2%; 
+    
+}
+
+
+
+
