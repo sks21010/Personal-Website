@@ -43,10 +43,10 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<ul>
-							<li><a href="#intro" class="active">My Education &#128218;</a></li>
-							<li><a href="#first">Experience &#128161;</a></li>
-							<li><a href="#second">Projects &#128187;</a></li>
-							<li><a href="#cta">Interests & Hobbies! &#128690;</a></li>
+							<li><a href="#education" class="active">My Education &#128218;</a></li>
+							<li><a href="#experience">Experience &#128161;</a></li>
+							<li><a href="#projects">Projects &#128187;</a></li>
+							<li><a href="#hobbies">Interests & Hobbies! &#128690;</a></li>
 						</ul>
 					</nav>
 
@@ -54,7 +54,7 @@
 					<div id="main">
 
 						<!-- Introduction -->
-							<section id="intro" class="main">
+							<section id="education" class="main">
 								<div class="spotlight">
 									<div class="content">
 										<header class="major">
@@ -83,7 +83,7 @@
 							</section>
 
 						<!-- First Section -->
-							<section id="first" class="main special">
+							<section id="experience" class="main special">
 								<header class="major">
 									<h2 style="font-family: 'Times New Roman', serif;"><b>Experience</b></h2>
 								</header>
@@ -146,96 +146,76 @@
 							</section>
 
 						<!-- Second Section -->
-							<section id="second" class="main special">
-								<header class="major">
-									<h2 style="font-family: 'Times New Roman', serif;">Projects</h2>
-								
-								</header>
+							
+						<section id="projects" class="main special">
+							<header class="major">
+								<h2 style="font-family: 'Times New Roman', serif;">Projects</h2>
+							</header>
+						
+							<div class="slideshow-container">
+								<!-- Radio buttons for navigation -->
+								<input type="radio" name="slide" id="slide1" checked>
+								<input type="radio" name="slide" id="slide2">
 
-								
-								
-								<div class="slidershow middle">
-
-
-									
-
-									<div class="slides">
-
-
-										<!-- Slide for the stocks analysis tool project -->
-										<div class="slide">
-
-
-
-											<div class="project_name_and_pic">
-												<h3 style="margin-bottom: 50px;"><b>Stock Analysis Tool</b></h3>
-												<img class="project_name_and_pic", src="stocks_analysis.jpg", alt = "", style="border-radius: 15px;">
-											</div>
-			
-											<div class="project_description">
-
-												<b>
-													<p style="margin-bottom: 10px;">-Generating historical insights for NASDAQ 100 stocks by loading data onto a cloud-based application</p>
-													<p style="margin-bottom: 10px;">-Using AWS RDS to store historical stock price data for over 20,000 US companies</p>
-													<p style="margin-bottom: 10px;">-Utilizing PostgreSQL, Python NumPy, Pandas DataFrames, and Pyscopg2 libraries to store and manipulate raw financial data</p>
-													<p style="margin-bottom: 10px;">-Using AWS QuickSight to create data visualizations from data in AWS RDS</p>
-
-												</b>
-												
-											
-											</div>
-								
-
-										</div>
-
-										<!-- Slide for the Nightlife app as a project-->
-
-										<div class="slide">
-
-											<div class="project_name_and_pic">
-												<h3 style="margin-bottom: 50px;"><b>Nightlife App</b></h3>
-												<img src="nightlife_logo.jpg", alt="", style="border-radius: 15px;">
-											</div>
-			
-											<div class="project_description">
-
-												<b>
-													<p style="margin-bottom: 10px;">-Developing an application that allows college students to both host and attend social events on and off campuses</p>
-													<p style="margin-bottom: 10px;">-Designed an ER diagram for AWS RDS (PostgreSQL) relational database </p>
-													<p style="margin-bottom: 10px;">-Created a technical architecture diagram involving AWS components such as Cognito, AppSync, and RDS</p>
-													<p style="margin-bottom: 10px;">-Created UI/UX screens for the app using SwiftUI</p>
-
-												</b>
-												
-											
-											</div>
-								
-
-										</div>
-
-									
-
-									</div>
-
-									
-
+								<!-- Navigation buttons -->
+								<div class="navigation">
+									<label for="slide1" class="nav-button">1</label>
+									<label for="slide2" class="nav-button">2</label>
+									<!-- Add more labels if you have more slides -->
 								</div>
+						
+								<!-- Slides -->
+								<div class="slides">
+									<!-- Slide for the stocks analysis tool project -->
+									<div class="slide">
+										<div class="project_name_and_pic">
+											<h3 style="margin-bottom: 50px;"><b>Stock Analysis Tool</b></h3>
+											<img class="project_name_and_pic" src="stocks_analysis.jpg" alt="" style="border-radius: 15px;">
+										</div>
+										<div class="project_description">
+											<b>
+												<p style="margin-bottom: 10px;">-Generating historical insights for NASDAQ 100 stocks by loading data onto a cloud-based application</p>
+												<p style="margin-bottom: 10px;">-Using AWS RDS to store historical stock price data for over 20,000 US companies</p>
+												<p style="margin-bottom: 10px;">-Utilizing PostgreSQL, Python NumPy, Pandas DataFrames, and Pyscopg2 libraries to store and manipulate raw financial data</p>
+												<p style="margin-bottom: 10px;">-Using AWS QuickSight to create data visualizations from data in AWS RDS</p>
+											</b>
+										</div>
+									</div>
+						
+									<!-- Slide for the Nightlife app -->
+									<div class="slide">
+										<div class="project_name_and_pic">
+											<h3 style="margin-bottom: 50px;"><b>Nightlife App</b></h3>
+											<img class="project_name_and_pic" src="nightlife_logo.jpg" alt="" style="border-radius: 15px;">
+										</div>
+										<div class="project_description">
+											<b>
+												<p style="margin-bottom: 10px;">-Developing an application that allows college students to both host and attend social events on and off campuses</p>
+												<p style="margin-bottom: 10px;">-Designed an ER diagram for AWS RDS (PostgreSQL) relational database</p>
+												<p style="margin-bottom: 10px;">-Created a technical architecture diagram involving AWS components such as Cognito, AppSync, and RDS</p>
+												<p style="margin-bottom: 10px;">-Created UI/UX screens for the app using SwiftUI</p>
+											</b>
+										</div>
+									</div>
+								</div>
+						
 								
-
-							</section>
+							</div>
+						</section>
+						
+							
 
 						<!-- Get Started -->
-							<section id="cta" class="main special">
+							<section id="hobbies" class="main special">
 								<header class="major">
-									<h2>Congue imperdiet</h2>
-									<p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
-									posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
+									<h2>Interests & Hobbies!</h2>
+									<p>In my free time, I usually like cycling on the trails near my hometown. I also enjoy writing historical fiction!</p>
 								</header>
 								<footer class="major">
-									<ul class="actions special">
+									<!-- <ul class="actions special">
 										<li><a href="generic.html" class="button primary">Get Started</a></li>
 										<li><a href="generic.html" class="button">Learn More</a></li>
-									</ul>
+									</ul> -->
 								</footer>
 							</section>
 
@@ -243,29 +223,26 @@
 
 				<!-- Footer -->
 					<footer id="footer">
-						<section>
+						<!-- <section>
 							<h2>Aliquam sed mauris</h2>
 							<p>Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.</p>
 							<ul class="actions">
 								<li><a href="generic.html" class="button">Learn More</a></li>
 							</ul>
 						</section>
-						<section>
-							<h2>Etiam feugiat</h2>
+						<section> -->
+							<h2>Contact info</h2>
 							<dl class="alt">
-								<dt>Address</dt>
-								<dd>1234 Somewhere Road &bull; Nashville, TN 00000 &bull; USA</dd>
 								<dt>Phone</dt>
-								<dd>(000) 000-0000 x 0000</dd>
+								<dd>+1 (860) 994-8409</dd>
 								<dt>Email</dt>
-								<dd><a href="#">information@untitled.tld</a></dd>
+								<dd><a href="#">sri_kiran.sripada@uconn.edu</a></dd>
 							</dl>
 							<ul class="icons">
-								<li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
-								<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
-								<li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
+								
+								<li><a href="https://github.com/sks21010" class="icon brands fa-github alt" target="_blank"><span class="label">GitHub</span></a></li>
+								<li><a href="https://linkedin.com/in/sri-kiran-sripada" class="icon brands fa-linkedin alt" target="_blank"><span class="label">LinkedIn</span></a></li>
+
 							</ul>
 						</section>
 						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
