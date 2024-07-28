@@ -78,24 +78,61 @@ input[type="radio"] {
     margin-left: 2%;
 }
 
-/* CSS for the background of the whole website */
+
+.header {
+    margin-top: 50px;
+    margin-left: 50px;
+    text-align: center;
+    color: white;
+    height: 65vh;
+    font-family: 'Garamond', serif;
+    font-size: 30px;
+    
+
+    
+}
 
 
-/* .body {
-    background-image: url("C:/Users/iamsk/sks_HTML/Personal Website Project/background_gradient.png");
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-} */
-
-
-/* .body {
-    background: radial-gradient(circle, blue, white);
-} */
 
 .body {
-    background: linear-gradient(to bottom, rgb(10, 10, 135), aqua, white);
+    background: linear-gradient(to bottom, black, rgb(10, 10, 135), rgb(47, 140, 172));
 }
+
+.nav {
+    height: 35vh;
+
+    ul {
+        list-style-type: none; 
+        padding: 0;           
+        margin: 0;             
+        display: flex;         
+        justify-content: center;
+    }
+
+    li {
+        margin-right: 20px;
+        text-align: center; 
+        border-radius: 20px; 
+        padding: 20px;
+        background: linear-gradient(to bottom, rgb(96, 188, 218), white); 
+        box-shadow: 0 0px 15px orange;
+		border: 3px solid white;
+        font-family: 'Garamond', serif;
+
+        font-size: 30px; 
+        
+        &:last-child {
+            margin-right: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+}
+
+
 
 
 
