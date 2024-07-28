@@ -1,17 +1,18 @@
-/* Slideshow container */
+/* CSS for the slideshow */
+
 .slideshow-container {
-    position: relative; /* Make sure the container is positioned relative */
+    position: relative;
     width: 100%;
-    overflow: hidden; /* Hide overflow content */
+    overflow: hidden;
 }
 
-/* Navigation buttons */
+
 .navigation {
-    position: absolute; /* Position it above the slideshow */
-    top: 10px; /* Distance from the top of the container */
+    position: absolute; 
+    top: 10px; 
     width: 100%;
     text-align: center;
-    z-index: 10; /* Ensure buttons are above the slides */
+    z-index: 10; 
 }
 
 .nav-button {
@@ -31,19 +32,19 @@
     background-color: #bbb;
 }
 
-/* Hide radio buttons */
+
 input[type="radio"] {
     display: none;
 }
 
-/* Slides container */
+
 .slides {
     display: flex;
     transition: transform 0.5s ease-in-out;
-    margin-top: 50px; /* Space for navigation */
+    margin-top: 50px; 
 }
 
-/* Individual slides */
+
 .slide {
     min-width: 100%;
     box-sizing: border-box;
@@ -54,7 +55,7 @@ input[type="radio"] {
     border-radius: 15px;
 }
 
-/* Slide transitions based on radio button selection */
+
 #slide1:checked ~ .slides {
     transform: translateX(0);
 }
@@ -63,16 +64,39 @@ input[type="radio"] {
     transform: translateX(-100%);
 }
 
-/* Styles for project name and picture */
+
 .project_name_and_pic {
     width: 48%;
     text-align: center;
     margin-right: 2%;
 }
 
-/* Styles for project description */
+
 .project_description {
     width: 48%;
     text-align: left;
     margin-left: 2%;
 }
+
+/* CSS for the background of the whole website */
+
+
+/* .body {
+    background-image: url("C:/Users/iamsk/sks_HTML/Personal Website Project/background_gradient.png");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+} */
+
+
+/* .body {
+    background: radial-gradient(circle, blue, white);
+} */
+
+.body {
+    background: linear-gradient(to bottom, rgb(10, 10, 135), aqua, white);
+}
+
+
+
+
