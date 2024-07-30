@@ -1,47 +1,62 @@
 <!DOCTYPE HTML>
-<!--
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+
 <html>
 	<head>
 		<title>Sri Kiran Sripada's Personal Website</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/slideshow.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+		<link rel="stylesheet" href="assets/css/styles.css">
+		<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
-
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+Telugu:wght@400;700&display=swap">
 	</head>
-	<body class="is-preload">
+	<body class="body">
 
 		<!-- Wrapper -->
-			<div id="wrapper">
+			<div>
 
 				<!-- Header -->
-					<header id="header" class="alt">
-						<span class="logo"><img 
-							src="Linkedin_Profile_Pic.jpg" 
-							alt=""
-							style ="
+					<header class="website_header">
+						
 							
-								width: 200px;
-								height: 200px;
-								border-radius: 50%;
-
-								" />
-						</span>
+						<img 
+						src="Linkedin_Profile_Pic.jpg" 
+						alt=""
+						style ="
+						
+							width: 200px;
+							height: 200px;
+							border-radius: 50%;
+							box-shadow: 0 0px 30px orange;
+							border: 3px solid white;
+							" />
+						
 						<h1><b>Hey! I'm Sri Kiran Sripada</b></h1>
-						<p>Computer Science @ University of Connecticut<br />
-						Aspiring software engineer<br />
+						<p>Computer Science @ University of Connecticut '26</p>
+						<p>Aspiring full-stack software engineer</p>
+
+						
+						<div style="display: flex; justify-content: center;">
+
+							<a href="https://github.com/sks21010" target="_blank">
+								<img src="github_icon.png" style="width: 50px; height: 50px; border-radius: 50%; margin-right: 20px;">
+							</a>
+							
+							<a href="https://linkedin.com/in/sri-kiran-sripada/" target="_blank">
+								<img src="linkedin_icon.png" style="width: 50px; height: 50px; margin-right: 20px;">
+							</a>
+							
+						</div>
+						
 						
 					</header>
 
+					
+
+
 				<!-- Nav -->
-					<nav id="nav">
+					<nav class="nav">
 						<ul>
 							<li><a href="#education" class="active">My Education &#128218;</a></li>
 							<li><a href="#experience">Experience &#128161;</a></li>
@@ -51,167 +66,177 @@
 					</nav>
 
 				<!-- Main -->
-					<div id="main">
+					<div class="content">
 
 						<!-- Introduction -->
-							<section id="education" class="main">
-								<div class="spotlight">
-									<div class="content">
-										<header class="major">
-											<h2 style="font-family: 'Times New Roman', serif;">My Education &#128218;</h2>
-										</header>
+							<section id="education">
+								<div class="education_content">
+									
+									<header>
+										<h2>My Education &#128218;</h2>
+									</header>
+									<div class="education_text_and_img">
 										<p>I'm a Computer Science student at the University of Connecticut (May 2026). 
 											So far, I've taken classes in data structures, algorithms, and systems programming. 
 											Through these classes, I've gained skills in Python and C. 
 											But, look at my experience and projects to find out what else I know!</p>
-										<!-- <ul class="actions">
-											<li><a href="generic.html" class="button">Learn More</a></li>
-										</ul> -->
-									</div>
-									<span class="image"><img 
-										src="cs_education.jpg" 
-										alt="" 
-										style="
 
-											width: 250px;
-											height: 250px;
-											border-radius: 50%;
-										
-										" />
-									</span>
+										<img src="uconn_edu_logo.jpg" alt="" >
+									</div>
+									
 								</div>
+
+								
+								
 							</section>
 
 						<!-- First Section -->
-							<section id="experience" class="main special">
-								<header class="major">
-									<h2 style="font-family: 'Times New Roman', serif;"><b>Experience</b></h2>
-								</header>
-								<ul class="features">
-									<li>
-										<h2>Headstarter AI</h2>
-										<span class="image"><img 
-											src="headstarter_logo.jpg" 
-											alt="" 
-											style="
+							<section id="experience">
+								<div class="projects_content">
+									<header>
+										<h2>Experience</h2>
+									</header>
+								
+									<div class="slideshow-container">
+										<!-- Radio buttons for navigation -->
+										<input type="radio" name="experience-slide" id="experience-slide1" checked>
+										<input type="radio" name="experience-slide" id="experience-slide2">
 	
-												width: 250px;
-												height: 250px;
-												border-radius: 50%;
+										<!-- Navigation buttons -->
+										<div class="navigation">
+											<label for="experience-slide1" class="nav-button">Prev</label>
+											<label for="experience-slide2" class="nav-button">Next</label>
+											<!-- Add more labels if you have more slides -->
+										</div>
+								
+										<!-- Slides -->
+										<div class="slides">
+
+											<!-- Slide for the Nightlife app -->
+											<div class="slide">
+												<div class="project_name_and_pic">
+													<h3 style="margin-bottom: 50px;"><b>Nightlife App</b></h3>
+													<h4 style="font-size: 25px;">May 2024 - Present</h4>
+													<img class="project_name_and_pic" src="nightlife_logo.jpg" alt="" style="border-radius: 15px;">
+												</div>
+												<div class="project_description">
+													<div>
+														<p>-Developing an application that allows college students to both host and attend social events on and off campuses</p>
+														<p>-Designed an ER diagram for AWS RDS (PostgreSQL) relational database</p>
+														<p>-Created a technical architecture diagram involving AWS components such as Cognito, AppSync, and RDS</p>
+														<p>-Created UI/UX screens for the app using SwiftUI</p>
+													</div>
+												</div>
+											</div>
+
+
+											<!-- Slide for the stocks analysis tool project -->
+											<div class="slide">
+												<div class="project_name_and_pic">
+													<h3><b>Headstarter AI</b></h3>
+													<h4 style="font-size: 25px;">Jul 2024 - Sep 2024</h4>
+													<img class="project_name_and_pic" src="headstarter_logo.jpg" alt="" style="border-radius: 15px;">
+												</div>
+												<div class="project_description">
+													<div>
+														<p>-Generating historical insights for NASDAQ 100 stocks by loading data onto a cloud-based application</p>
+														<p>-Using AWS RDS to store historical stock price data for over 20,000 US companies</p>
+														<p>-Utilizing PostgreSQL, Python NumPy, Pandas DataFrames, and Pyscopg2 libraries to store and manipulate raw financial data</p>
+														<p>-Using AWS QuickSight to create data visualizations from data in AWS RDS</p>
+													</div>
+												</div>
+											</div>
+								
 											
-											" />
-										</span>
-										<h3><b>Software Engineering Fellow</b></h3>
-										<p>Jul 2024 - Present</p>
-										<p style="text-align: left;">
-											<span style="display: block; margin-bottom: 10px;">- Part of a team that is working on 5 web-based and AI projects over a period of 5 weeks</span>
-											<span style="display: block; margin-bottom: 10px;">- Utilizing front end frameworks such as React.js, Next.js, and AWS to deploy cloud-based applications</span>
-											<span style="display: block; margin-bottom: 10px;">- Developing a customer support service that uses generative AI via OpenAI APIs</span>
-											<span style="display: block;">- Final project will take a startup's current backlog and build it up to meet business requirements</span>
-										</p>								
-									</li>
-									<li>
-										<h2>Nightlife</h2>
-										<span class="image"><img 
-											src="nightlife_logo.jpg" 
-											alt="" 
-											style="
-	
-												width: 250px;
-												height: 250px;
-												border-radius: 50%;
-											
-											" />
-										</span>
-										<h3><b>Student Software Developer</b></h3>
-										<p>May 2024 - Present</p>
-										<p style="text-align: left;"> 
-											<span style="display: block; margin-bottom: 10px;">-Developing an application using Python, SQL, Swift, and SwiftUI</span>
-											<span style="display: block; margin-bottom: 10px;">-Designed an ER diagram for AWS RDS (PostgreSQL) relational database</span>
-											<span style="display: block; margin-bottom: 10px;">-Created a technical architecture diagram involving AWS components such as Cognito, AppSync, and RDS</span>
-											<span style="display: block; margin-bottom: 10px;">-Created UI/UX screens for the app using SwiftUI</span>
-										</p>
-									</li>
-									<!-- <li>
-										<span class="icon major style5 fa-gem"></span>
-										<h3>Dolor nullam</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
-									</li> -->
-								</ul>
-								<!-- <footer class="major">
-									<ul class="actions special">
-										<li><a href="generic.html" class="button">Learn More</a></li>
-									</ul>
-								</footer> -->
+										</div>
+									</div>
+								
+								</div>
 							</section>
 
 						<!-- Second Section -->
-							
-						<section id="projects" class="main special">
-							<header class="major">
-								<h2 style="font-family: 'Times New Roman', serif;">Projects</h2>
-							</header>
-						
-							<div class="slideshow-container">
-								<!-- Radio buttons for navigation -->
-								<input type="radio" name="slide" id="slide1" checked>
-								<input type="radio" name="slide" id="slide2">
+							<section id="projects">
+								<div class="projects_content">
+									<header>
+										<h2>Projects</h2>
+									</header>
+									
+									<div class="slideshow-container">
+										<!-- Radio buttons for navigation -->
+										<input type="radio" name="project-slide" id="project-slide1" checked>
+										<input type="radio" name="project-slide" id="project-slide2">
 
-								<!-- Navigation buttons -->
-								<div class="navigation">
-									<label for="slide1" class="nav-button"> Prev </label>
-									<label for="slide2" class="nav-button"> Next </label>
-									<!-- Add more labels if you have more slides -->
-								</div>
-						
-								<!-- Slides -->
-								<div class="slides">
-									<!-- Slide for the stocks analysis tool project -->
-									<div class="slide">
-										<div class="project_name_and_pic">
-											<h3 style="margin-bottom: 50px;"><b>Stock Analysis Tool</b></h3>
-											<img class="project_name_and_pic" src="stocks_analysis.jpg" alt="" style="border-radius: 15px;">
+										<!-- Navigation buttons -->
+										<div class="navigation">
+											<label for="project-slide1" class="nav-button">Prev</label>
+											<label for="project-slide2" class="nav-button">Next</label>
 										</div>
-										<div class="project_description">
-											<b>
-												<p style="margin-bottom: 10px;">-Generating historical insights for NASDAQ 100 stocks by loading data onto a cloud-based application</p>
-												<p style="margin-bottom: 10px;">-Using AWS RDS to store historical stock price data for over 20,000 US companies</p>
-												<p style="margin-bottom: 10px;">-Utilizing PostgreSQL, Python NumPy, Pandas DataFrames, and Pyscopg2 libraries to store and manipulate raw financial data</p>
-												<p style="margin-bottom: 10px;">-Using AWS QuickSight to create data visualizations from data in AWS RDS</p>
-											</b>
+
+										<!-- Slides -->
+										<div class="slides">
+											<!-- Slide for the Stock Analysis Tool -->
+											<div class="slide">
+												<div class="project_name_and_pic">
+													<h3 style="margin-bottom: 50px;"><b>Stock Analysis Tool</b></h3>
+													<img class="project_name_and_pic" src="stocks_analysis.jpg" alt="" style="border-radius: 15px;">
+												</div>
+												<div class="project_description">
+													<div>
+														<p>-Generating historical insights for NASDAQ 100 stocks by loading data onto a cloud-based application</p>
+														<p>-Using AWS RDS to store historical stock price data for over 20,000 US companies</p>
+														<p>-Utilizing PostgreSQL, Python NumPy, Pandas DataFrames, and Pyscopg2 libraries to store and manipulate raw financial data</p>
+														<p>-Using AWS QuickSight to create data visualizations from data in AWS RDS</p>
+													</div>
+												</div>
+											</div>
+											
+											<!-- Slide for the Nightlife App -->
+											<div class="slide">
+												<div class="project_name_and_pic">
+													<h3 style="margin-bottom: 50px;"><b>Nightlife App</b></h3>
+													<img class="project_name_and_pic" src="nightlife_logo.jpg" alt="" style="border-radius: 15px;">
+												</div>
+												<div class="project_description">
+													<div>
+														<p>-Developing an application that allows college students to both host and attend social events on and off campuses</p>
+														<p>-Designed an ER diagram for AWS RDS (PostgreSQL) relational database</p>
+														<p>-Created a technical architecture diagram involving AWS components such as Cognito, AppSync, and RDS</p>
+														<p>-Created UI/UX screens for the app using SwiftUI</p>
+													</div>
+												</div>
+											</div>
 										</div>
 									</div>
-						
-									<!-- Slide for the Nightlife app -->
-									<div class="slide">
-										<div class="project_name_and_pic">
-											<h3 style="margin-bottom: 50px;"><b>Nightlife App</b></h3>
-											<img class="project_name_and_pic" src="nightlife_logo.jpg" alt="" style="border-radius: 15px;">
-										</div>
-										<div class="project_description">
-											<b>
-												<p style="margin-bottom: 10px;">-Developing an application that allows college students to both host and attend social events on and off campuses</p>
-												<p style="margin-bottom: 10px;">-Designed an ER diagram for AWS RDS (PostgreSQL) relational database</p>
-												<p style="margin-bottom: 10px;">-Created a technical architecture diagram involving AWS components such as Cognito, AppSync, and RDS</p>
-												<p style="margin-bottom: 10px;">-Created UI/UX screens for the app using SwiftUI</p>
-											</b>
-										</div>
-									</div>
 								</div>
-						
-								
-							</div>
-						</section>
-						
+							</section>
+
+						  
 							
 
 						<!-- Get Started -->
-							<section id="hobbies" class="main special">
-								<header class="major">
-									<h2 style="font-family: 'Times New Roman', serif;">Interests & Hobbies!</h2>
-									<p>In my free time, I usually like cycling on the trails near my hometown. I also enjoy writing historical fiction!</p>
-								</header>
-								<footer class="major">
+							<section id="hobbies">
+								<div class="education_content">
+									
+									<header>
+										<h2>My Hobbies &#128690;</h2>
+									</header>
+									<div class="education_text_and_img">
+										<p>In my free time, I enjoy cycling on the small roads and trails near my hometown. 
+											I become Edsger Dijkstra when I'm about to be late for dinner! <br />
+
+											<br />
+											
+											When I'm indoors, I enjoy writing historical fiction. 
+											My favorite setting and time period is the Mediterranean during the Byzantine era!
+											Ἐν τούτῳ νίκα! In hoc signo vinces!
+										
+										</p>
+
+										<img src="cycling.jpg" alt="" >
+									</div>
+									
+								</div>
+								<footer class="footer">
 									<!-- <ul class="actions special">
 										<li><a href="generic.html" class="button primary">Get Started</a></li>
 										<li><a href="generic.html" class="button">Learn More</a></li>
@@ -221,8 +246,10 @@
 
 					</div>
 
+					  
+
 				<!-- Footer -->
-					<footer id="footer">
+					<footer class="footer">
 						<!-- <section>
 							<h2>Aliquam sed mauris</h2>
 							<p>Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.</p>
@@ -231,33 +258,17 @@
 							</ul>
 						</section>
 						<section> -->
-							<h2>Contact info</h2>
-							<dl class="alt">
-								<dt>Phone</dt>
-								<dd>+1 (860) 994-8409</dd>
-								<dt>Email</dt>
-								<dd><a href="#">sri_kiran.sripada@uconn.edu</a></dd>
-							</dl>
-							<ul class="icons">
-								
-								<li><a href="https://github.com/sks21010" class="icon brands fa-github alt" target="_blank"><span class="label">GitHub</span></a></li>
-								<li><a href="https://linkedin.com/in/sri-kiran-sripada" class="icon brands fa-linkedin alt" target="_blank"><span class="label">LinkedIn</span></a></li>
-
-							</ul>
+							
+							<p>&copy; Sri Kiran Sripada. All rights reserved.</p>
+							
 						</section>
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+						
 					</footer>
 
 			</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			
 
 	</body>
 </html>
