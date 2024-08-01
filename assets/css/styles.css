@@ -17,6 +17,8 @@
 
     label {
         box-shadow: 0 0px 3px black;
+        width: 5%;
+        
     }
     
     
@@ -72,6 +74,10 @@ input[type="radio"] {
 
 #project-slide2:checked ~ .slides {
     transform: translateX(-100%);
+}
+
+#project-slide3:checked ~ .slides {
+    transform: translateX(-200%);
 }
 
 #experience-slide1:checked ~ .slides {
