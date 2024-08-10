@@ -81,7 +81,7 @@ input[type="radio"] {
 }
 
 #project-slide4:checked ~ .slides {
-    transform: translateX(-300%)
+    transform: translateX(-300%);
 }
 
 #experience-slide1:checked ~ .slides {
