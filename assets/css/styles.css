@@ -26,8 +26,8 @@
 
 .nav-button {
     display: inline-block;
-    width: 50px;
-    height: 30px;
+    width: 10vh;
+    height: 3.5vh;
     margin: 0 15px;
     background-color: #ddd;
     text-align: center;
